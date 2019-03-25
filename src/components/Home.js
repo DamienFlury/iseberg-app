@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Container from "../styled-components/Containers/Container";
 import Typography from "../styled-components/Typography";
 import { Parallax } from "react-parallax";
