@@ -10,9 +10,15 @@ const Button = styled.button`
     outline: none;
     box-shadow: 0 2px 2px #888888;
     transition: 0.2s;
+    cursor: pointer;
 
     &:active {
-        box-shadow: 0 5px 5px #888888;
+        box-shadow: 0 3px 5px #888888;
+    }
+
+    &:disabled {
+        background-color: #aaaaaa;
+        cursor: default;
     }
 `;
 

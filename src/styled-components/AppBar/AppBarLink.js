@@ -1,7 +1,9 @@
+import React from 'react';
 import styled from 'styled-components';
-import {Link} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
+import { withTheme } from 'styled-components';
 
-const AppBarLink = styled(Link)`
+const StyledLink = styled(NavLink)`
     display: inline-block;
     color: white;
     text-decoration: none;
@@ -13,5 +15,7 @@ const AppBarLink = styled(Link)`
         background-color: ${props => props.theme.palette.primaryDark}
     }
 `
+
+const AppBarLink = withTheme(({children, to, theme}) => <StyledLink to={to} activeStyle={{backgroundColor: theme.palette.primaryDark}}>{children}</StyledLink>);
 
 export default AppBarLink;

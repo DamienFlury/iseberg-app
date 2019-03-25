@@ -8,6 +8,8 @@ import TableBody from "../styled-components/Table/TableBody";
 import TableRow from "../styled-components/Table/TableRow";
 import TableCell from "../styled-components/Table/TableCell";
 import TableHead from "../styled-components/Table/TableHead";
+import Button from "../styled-components/Inputs/Button";
+import { Link } from "react-router-dom";
 
 const Reservations = () => {
   const { reservations } = useContext(ReservationContext);
@@ -47,6 +49,9 @@ const Reservations = () => {
           </TableBody>
         </Table>
       </Paper>
+      <div style={{ marginTop: 20 }}>
+        <Link to="/new-reservation"><Button>New Reservation</Button></Link>
+      </div>
     </Container>
   );
 };

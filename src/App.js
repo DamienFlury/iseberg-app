@@ -51,7 +51,7 @@ const App = () => {
       <ThemeProvider theme={theme}>
         <BrowserRouter>
           <AppBar>
-            <AppBarTitle>Iseberg</AppBarTitle>
+            <AppBarTitle to="/">Iseberg</AppBarTitle>
             <AppBarLink to="/reservations">Reservations</AppBarLink>
             <AppBarLink to="/new-reservation">New Reservation</AppBarLink>
           </AppBar>
