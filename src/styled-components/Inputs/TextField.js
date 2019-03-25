@@ -4,7 +4,7 @@ const TextField = styled.input`
     padding: 10px;
     outline: none;
     border: none;
-    border-bottom: 2px solid #888888;
+    border-bottom: 2px solid #aaaaaa;
     transition: 0.4s;
 
     &:focus {
