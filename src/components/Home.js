@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 const Home = () => (
   <Container>
-    <Typography variant="h1">Willkommen!</Typography>
+    <Typography variant="h1">Welcome</Typography>
     <Paper style={{ marginTop: 20 }}>
       <Parallax bgImage="https://s3.eu-central-1.amazonaws.com/bosglive/media/location/images/2015/05/bergrestaurant_magisalp_hasliberg_reuti_bergrestaurant_magisalp_hasliberg_01.jpg"
         strength={500}>
