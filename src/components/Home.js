@@ -4,6 +4,7 @@ import Typography from "../styled-components/Typography";
 import { Parallax } from "react-parallax";
 import Paper from "../styled-components/Containers/Paper";
 import Button from "../styled-components/Inputs/Button";
+import { Link } from "react-router-dom";
 
 const Home = () => (
   <Container>
@@ -16,8 +17,10 @@ const Home = () => (
       </Parallax>
     </Paper>
     <div style={{ marginTop: 20, marginBottom: 20, textAlign: 'center' }}>
-      <Button style={{ marginRight: 40 }}>View Reservations</Button>
-      <Button>New Reservation</Button>
+      <Link to="/reservations"><Button style={{ marginRight: 40 }}>View Reservations</Button></Link>
+      <Link to="/new-reservation">
+        <Button>New Reservation</Button>
+      </Link>
     </div>
   </Container>
 )
